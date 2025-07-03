@@ -1,0 +1,158 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f0f2f5;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* 自定义样式 */
+.app-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.app-header .ant-layout-header {
+  background: transparent;
+}
+
+.app-logo {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  float: left;
+  margin-right: 24px;
+}
+
+.app-nav {
+  background: transparent;
+  border-bottom: none;
+}
+
+.app-nav .ant-menu-item {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.app-nav .ant-menu-item:hover,
+.app-nav .ant-menu-item-selected {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.content-container {
+  padding: 24px;
+  min-height: calc(100vh - 64px);
+}
+
+.summoner-card {
+  margin-bottom: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.summoner-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 3px solid #1890ff;
+}
+
+.rank-badge {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.rank-iron { background-color: #8B4513; color: white; }
+.rank-bronze { background-color: #CD7F32; color: white; }
+.rank-silver { background-color: #C0C0C0; color: black; }
+.rank-gold { background-color: #FFD700; color: black; }
+.rank-platinum { background-color: #00CED1; color: white; }
+.rank-diamond { background-color: #B9F2FF; color: black; }
+.rank-master { background-color: #9932CC; color: white; }
+.rank-grandmaster { background-color: #FF4500; color: white; }
+.rank-challenger { background-color: #F0E68C; color: black; }
+
+.match-card {
+  margin-bottom: 12px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.match-win {
+  border-left: 4px solid #52c41a;
+  background-color: #f6ffed;
+}
+
+.match-loss {
+  border-left: 4px solid #ff4d4f;
+  background-color: #fff2f0;
+}
+
+.champion-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 2px solid #1890ff;
+}
+
+.kda-stats {
+  font-weight: bold;
+}
+
+.kda-excellent { color: #52c41a; }
+.kda-good { color: #1890ff; }
+.kda-average { color: #faad14; }
+.kda-poor { color: #ff4d4f; }
+
+.search-container {
+  background: white;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 24px;
+}
+
+.stats-card {
+  text-align: center;
+  padding: 16px;
+}
+
+.stats-number {
+  font-size: 24px;
+  font-weight: bold;
+  color: #1890ff;
+}
+
+.stats-label {
+  color: #666;
+  margin-top: 8px;
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+}
+
+.error-container {
+  text-align: center;
+  padding: 48px 24px;
+}
+
+.empty-container {
+  text-align: center;
+  padding: 48px 24px;
+  color: #999;
+}

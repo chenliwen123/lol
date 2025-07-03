@@ -1,0 +1,46 @@
+{
+  "name": "lol-stats-system",
+  "version": "1.0.0",
+  "description": "掌盟战绩数据抓取和展示系统",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node start-dev.js",
+    "server": "node server/index.js",
+    "dev": "nodemon server/index.js",
+    "client": "cd client && npm start",
+    "build": "cd client && npm run build",
+    "crawler": "node crawler/index.js",
+    "crawler-simple": "node crawler/simple-crawler.js",
+    "crawler-lcu": "node crawler/lcu-crawler.js",
+    "crawler-enhanced": "node crawler/enhanced-mock-crawler.js",
+    "test-lcu": "node test-lcu.js",
+    "install-all": "npm install && cd client && npm install",
+    "fix-install": "npm cache clean --force && npm install --no-optional --legacy-peer-deps",
+    "clean": "rm -rf node_modules client/node_modules"
+  },
+  "keywords": [
+    "lol",
+    "掌盟",
+    "战绩",
+    "爬虫",
+    "mongodb",
+    "react"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-rate-limit": "^6.10.0",
+    "mongoose": "^7.5.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "axios": "^1.5.0",
+    "cheerio": "^1.0.0-rc.12",
+    "helmet": "^7.0.0",
+    "morgan": "^1.10.0",
+    "puppeteer": "^19.11.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
