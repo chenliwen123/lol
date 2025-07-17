@@ -12,7 +12,7 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 // 连接数据库
-connectDB();
+connectDB(); //
 
 // 基础中间件
 app.use(helmet());
